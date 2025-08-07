@@ -9,7 +9,9 @@ import Foundation
 import VerifyJPKI
 
 public class MuBinaryLibrary {
-    public func hee() -> String {
+    public init() {}
+
+    public func hello() -> String {
         return "Hello, World!"
     }
 
