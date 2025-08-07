@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18F1B4322E4457F600EF4446 /* MyBinaryLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F1B4262E4457F600EF4446 /* MyBinaryLibrary.framework */; };
+		18F1B4422E44595900EF4446 /* VerifyJPKI in Frameworks */ = {isa = PBXBuildFile; productRef = 18F1B4412E44595900EF4446 /* VerifyJPKI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F1B4422E44595900EF4446 /* VerifyJPKI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +108,7 @@
 			);
 			name = MyBinaryLibrary;
 			packageProductDependencies = (
+				18F1B4412E44595900EF4446 /* VerifyJPKI */,
 			);
 			productName = MyBinaryLibrary;
 			productReference = 18F1B4262E4457F600EF4446 /* MyBinaryLibrary.framework */;
@@ -161,6 +164,9 @@
 			);
 			mainGroup = 18F1B41C2E4457F600EF4446;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				18F1B4402E44595900EF4446 /* XCRemoteSwiftPackageReference "VerifyJPKI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 18F1B4272E4457F600EF4446 /* Products */;
 			projectDirPath = "";
@@ -490,6 +496,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18F1B4402E44595900EF4446 /* XCRemoteSwiftPackageReference "VerifyJPKI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://repo.platform.p8n.app/VerifyJPKI/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18F1B4412E44595900EF4446 /* VerifyJPKI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18F1B4402E44595900EF4446 /* XCRemoteSwiftPackageReference "VerifyJPKI" */;
+			productName = VerifyJPKI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18F1B41D2E4457F600EF4446 /* Project object */;
 }
