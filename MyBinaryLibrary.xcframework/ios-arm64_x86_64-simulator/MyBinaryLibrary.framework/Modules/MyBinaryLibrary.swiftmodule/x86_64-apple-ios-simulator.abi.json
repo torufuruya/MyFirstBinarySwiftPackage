@@ -1,0 +1,107 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "MyBinaryLibrary",
+    "printedName": "MyBinaryLibrary",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyBinaryLibrary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VerifyJPKI",
+        "printedName": "VerifyJPKI",
+        "declKind": "Import",
+        "moduleName": "MyBinaryLibrary"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MuBinaryLibrary",
+        "printedName": "MuBinaryLibrary",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "hee",
+            "printedName": "hee()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MyBinaryLibrary02MubC0C3heeSSyF",
+            "mangledName": "$s15MyBinaryLibrary02MubC0C3heeSSyF",
+            "moduleName": "MyBinaryLibrary",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scanMyNumberCard",
+            "printedName": "scanMyNumberCard(password:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MyBinaryLibrary02MubC0C04scanA10NumberCard8passwordySS_tYaKF",
+            "mangledName": "$s15MyBinaryLibrary02MubC0C04scanA10NumberCard8passwordySS_tYaKF",
+            "moduleName": "MyBinaryLibrary",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15MyBinaryLibrary02MubC0C",
+        "mangledName": "$s15MyBinaryLibrary02MubC0C",
+        "moduleName": "MyBinaryLibrary",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
