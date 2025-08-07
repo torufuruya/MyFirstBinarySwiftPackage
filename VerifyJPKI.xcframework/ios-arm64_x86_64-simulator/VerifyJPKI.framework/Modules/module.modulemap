@@ -1,5 +1,0 @@
-framework module "VerifyJPKI" {
-    umbrella header "VerifyJPKI.h"
-    export *
-    module * { export * }
-}
