@@ -23,13 +23,34 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "MuBinaryLibrary",
-        "printedName": "MuBinaryLibrary",
+        "name": "MyBinaryLibrary",
+        "printedName": "MyBinaryLibrary",
         "children": [
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MyBinaryLibrary",
+                "printedName": "MyBinaryLibrary.MyBinaryLibrary",
+                "usr": "s:15MyBinaryLibraryAAC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15MyBinaryLibraryAACABycfc",
+            "mangledName": "$s15MyBinaryLibraryAACABycfc",
+            "moduleName": "MyBinaryLibrary",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
-            "name": "hee",
-            "printedName": "hee()",
+            "name": "hello",
+            "printedName": "hello()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -39,8 +60,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15MyBinaryLibrary02MubC0C3heeSSyF",
-            "mangledName": "$s15MyBinaryLibrary02MubC0C3heeSSyF",
+            "usr": "s:15MyBinaryLibraryAAC5helloSSyF",
+            "mangledName": "$s15MyBinaryLibraryAAC5helloSSyF",
             "moduleName": "MyBinaryLibrary",
             "declAttributes": [
               "AccessControl"
@@ -65,8 +86,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15MyBinaryLibrary02MubC0C04scanA10NumberCard8passwordySS_tYaKF",
-            "mangledName": "$s15MyBinaryLibrary02MubC0C04scanA10NumberCard8passwordySS_tYaKF",
+            "usr": "s:15MyBinaryLibraryAAC04scanA10NumberCard8passwordySS_tYaKF",
+            "mangledName": "$s15MyBinaryLibraryAAC04scanA10NumberCard8passwordySS_tYaKF",
             "moduleName": "MyBinaryLibrary",
             "declAttributes": [
               "AccessControl"
@@ -76,13 +97,12 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:15MyBinaryLibrary02MubC0C",
-        "mangledName": "$s15MyBinaryLibrary02MubC0C",
+        "usr": "s:15MyBinaryLibraryAAC",
+        "mangledName": "$s15MyBinaryLibraryAAC",
         "moduleName": "MyBinaryLibrary",
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",

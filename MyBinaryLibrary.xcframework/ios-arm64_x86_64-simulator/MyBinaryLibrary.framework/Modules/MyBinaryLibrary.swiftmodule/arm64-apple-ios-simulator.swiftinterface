@@ -8,8 +8,9 @@ import VerifyJPKI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers public class MuBinaryLibrary {
-  public func hee() -> Swift.String
+public class MyBinaryLibrary {
+  public init()
+  public func hello() -> Swift.String
   public func scanMyNumberCard(password: Swift.String) async throws
   @objc deinit
 }
