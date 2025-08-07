@@ -10,7 +10,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "MyBinaryLibrary",
-            targets: ["MyBinaryLibrary"]),
+            targets: ["MyBinaryLibraryWrapper"]),
     ],
     dependencies: [
         .package(url: "https://repo.platform.p8n.app/VerifyJPKI/", .upToNextMajor(from: "1.1.3")),
@@ -22,5 +22,12 @@ let package = Package(
             name: "MyBinaryLibrary",
             path: "./MyBinaryLibrary.xcframework"
         ),
+        .target(
+            name: "MyBinaryLibraryWrapper",
+            dependencies: [
+                "MyBinaryLibrary",
+                .product(name: "VerifyJPKI", package: "VerifyJPKI")
+            ]
+        )
     ]
 )
