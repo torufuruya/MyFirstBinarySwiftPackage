@@ -6,14 +6,25 @@
 //
 
 import SwiftUI
+import MyBinaryLibrary
 
 struct ContentView: View {
+    let myLibrary = MyBinaryLibrary()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button("Hello!") {
+                debugPrint(myLibrary.hello())
+            }
+            Button("Scan MyNumber Card") {
+                Task {
+                    do {
+                        try await myLibrary.scanMyNumberCard(password: "abc123")
+                    } catch {
+                        debugPrint(error)
+                    }
+                }
+            }
         }
         .padding()
     }
