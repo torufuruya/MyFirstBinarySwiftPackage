@@ -8,7 +8,7 @@
 import Foundation
 import VerifyJPKI
 
-public class MuBinaryLibrary {
+public class MyBinaryLibrary {
     public init() {}
 
     public func hello() -> String {
