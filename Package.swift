@@ -10,7 +10,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "MyBinaryLibrary",
-            targets: ["MyBinaryLibrary"]),
+            targets: ["MyBinaryLibrary", "VerifyJPKI"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -18,6 +18,10 @@ let package = Package(
         .binaryTarget(
             name: "MyBinaryLibrary",
             path: "./MyBinaryLibrary.xcframework"
+        ),
+        .binaryTarget(
+            name: "VerifyJPKI",
+            path: "./VerifyJPKI.xcframework"
         ),
     ]
 )
